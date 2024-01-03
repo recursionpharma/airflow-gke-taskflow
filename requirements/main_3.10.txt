@@ -1,6 +1,6 @@
 aiofiles==23.2.1
     # via gcloud-aio-storage
-aiohttp==3.8.5
+aiohttp==3.9.0
     # via
     #   apache-airflow-providers-http
     #   gcloud-aio-auth
