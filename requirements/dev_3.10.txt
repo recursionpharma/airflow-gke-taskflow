@@ -1,0 +1,1087 @@
+aiofiles==23.2.1
+    # via gcloud-aio-storage
+aiohttp==3.8.5
+    # via
+    #   apache-airflow-providers-http
+    #   gcloud-aio-auth
+    #   kubernetes-asyncio
+aiosignal==1.3.1
+    # via aiohttp
+alembic==1.12.0
+    # via
+    #   apache-airflow
+    #   sqlalchemy-spanner
+annotated-types==0.5.0
+    # via pydantic
+anyio==4.0.0
+    # via httpcore
+apache-airflow==2.7.1
+    # via
+    #   apache-airflow-providers-cncf-kubernetes
+    #   apache-airflow-providers-common-sql
+    #   apache-airflow-providers-ftp
+    #   apache-airflow-providers-google
+    #   apache-airflow-providers-http
+    #   apache-airflow-providers-imap
+    #   apache-airflow-providers-sqlite
+apache-airflow-providers-cncf-kubernetes==7.6.0
+    # via gke-taskflow (pyproject.toml)
+apache-airflow-providers-common-sql==1.7.2
+    # via
+    #   apache-airflow
+    #   apache-airflow-providers-google
+    #   apache-airflow-providers-sqlite
+apache-airflow-providers-ftp==3.5.2
+    # via apache-airflow
+apache-airflow-providers-google==10.9.0
+    # via gke-taskflow (pyproject.toml)
+apache-airflow-providers-http==4.5.2
+    # via apache-airflow
+apache-airflow-providers-imap==3.3.2
+    # via apache-airflow
+apache-airflow-providers-sqlite==3.4.3
+    # via apache-airflow
+apispec[yaml]==6.3.0
+    # via flask-appbuilder
+argcomplete==3.1.2
+    # via apache-airflow
+asgiref==3.7.2
+    # via
+    #   apache-airflow
+    #   apache-airflow-providers-cncf-kubernetes
+    #   apache-airflow-providers-google
+    #   apache-airflow-providers-http
+async-timeout==4.0.3
+    # via aiohttp
+attrs==23.1.0
+    # via
+    #   aiohttp
+    #   apache-airflow
+    #   cattrs
+    #   jsonschema
+    #   looker-sdk
+    #   referencing
+autoflake==2.2.1
+    # via roadie
+autopep8==2.0.4
+    # via roadie
+babel==2.13.0
+    # via flask-babel
+backoff==2.2.1
+    # via
+    #   gcloud-aio-auth
+    #   opentelemetry-exporter-otlp-proto-common
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+bandit==1.7.5
+    # via gke-taskflow (pyproject.toml)
+black==23.9.1
+    # via
+    #   gke-taskflow (pyproject.toml)
+    #   roadie
+blinker==1.6.2
+    # via apache-airflow
+build==1.0.3
+    # via pip-tools
+cachelib==0.9.0
+    # via
+    #   flask-caching
+    #   flask-session
+cachetools==5.3.1
+    # via
+    #   google-auth
+    #   tox
+cattrs==23.1.2
+    # via
+    #   apache-airflow
+    #   looker-sdk
+certifi==2023.7.22
+    # via
+    #   httpcore
+    #   httpx
+    #   kubernetes
+    #   kubernetes-asyncio
+    #   requests
+cffi==1.16.0
+    # via cryptography
+cfgv==3.4.0
+    # via pre-commit
+chardet==5.2.0
+    # via
+    #   gcloud-aio-auth
+    #   tox
+charset-normalizer==3.3.0
+    # via
+    #   aiohttp
+    #   requests
+click==8.1.7
+    # via
+    #   black
+    #   clickclick
+    #   docstr-coverage
+    #   flask
+    #   flask-appbuilder
+    #   griphook
+    #   pip-tools
+    #   roadie
+    #   trogon
+clickclick==20.10.2
+    # via connexion
+colorama==0.4.6
+    # via
+    #   flask-appbuilder
+    #   radon
+    #   roadie
+    #   tox
+colorlog==4.8.0
+    # via apache-airflow
+configupdater==3.1.1
+    # via apache-airflow
+connexion[flask]==2.14.2
+    # via apache-airflow
+coverage[toml]==7.3.2
+    # via
+    #   gke-taskflow (pyproject.toml)
+    #   pytest-cov
+cron-descriptor==1.4.0
+    # via apache-airflow
+croniter==1.4.1
+    # via apache-airflow
+cryptography==41.0.4
+    # via
+    #   apache-airflow
+    #   apache-airflow-providers-cncf-kubernetes
+    #   gcloud-aio-auth
+    #   pyopenssl
+db-dtypes==1.1.1
+    # via pandas-gbq
+deprecated==1.2.14
+    # via
+    #   apache-airflow
+    #   limits
+    #   opentelemetry-api
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+dill==0.3.7
+    # via apache-airflow
+distlib==0.3.7
+    # via virtualenv
+dnspython==2.4.2
+    # via email-validator
+docstr-coverage==2.3.0
+    # via gke-taskflow (pyproject.toml)
+docutils==0.20.1
+    # via python-daemon
+email-validator==1.3.1
+    # via flask-appbuilder
+exceptiongroup==1.1.3
+    # via
+    #   anyio
+    #   cattrs
+    #   pytest
+fastjsonschema==2.18.1
+    # via validate-pyproject
+filelock==3.12.4
+    # via
+    #   tox
+    #   virtualenv
+flask==2.2.5
+    # via
+    #   apache-airflow
+    #   connexion
+    #   flask-appbuilder
+    #   flask-babel
+    #   flask-caching
+    #   flask-jwt-extended
+    #   flask-limiter
+    #   flask-login
+    #   flask-session
+    #   flask-sqlalchemy
+    #   flask-wtf
+flask-appbuilder==4.3.6
+    # via apache-airflow
+flask-babel==2.0.0
+    # via flask-appbuilder
+flask-caching==2.0.2
+    # via apache-airflow
+flask-jwt-extended==4.5.3
+    # via flask-appbuilder
+flask-limiter==3.5.0
+    # via flask-appbuilder
+flask-login==0.6.2
+    # via
+    #   apache-airflow
+    #   flask-appbuilder
+flask-session==0.5.0
+    # via apache-airflow
+flask-sqlalchemy==2.5.1
+    # via flask-appbuilder
+flask-wtf==1.2.1
+    # via
+    #   apache-airflow
+    #   flask-appbuilder
+frozenlist==1.4.0
+    # via
+    #   aiohttp
+    #   aiosignal
+gcloud-aio-auth==4.2.3
+    # via
+    #   apache-airflow-providers-google
+    #   gcloud-aio-bigquery
+    #   gcloud-aio-storage
+gcloud-aio-bigquery==7.0.0
+    # via apache-airflow-providers-google
+gcloud-aio-storage==9.0.0
+    # via apache-airflow-providers-google
+gitdb==4.0.10
+    # via gitpython
+gitpython==3.1.37
+    # via
+    #   bandit
+    #   roadie
+google-ads==22.0.0
+    # via apache-airflow-providers-google
+google-api-core[grpc]==2.12.0
+    # via
+    #   apache-airflow-providers-google
+    #   google-ads
+    #   google-api-python-client
+    #   google-cloud-aiplatform
+    #   google-cloud-appengine-logging
+    #   google-cloud-automl
+    #   google-cloud-batch
+    #   google-cloud-bigquery
+    #   google-cloud-bigquery-datatransfer
+    #   google-cloud-bigquery-storage
+    #   google-cloud-bigtable
+    #   google-cloud-build
+    #   google-cloud-compute
+    #   google-cloud-container
+    #   google-cloud-core
+    #   google-cloud-datacatalog
+    #   google-cloud-dataflow-client
+    #   google-cloud-dataform
+    #   google-cloud-dataplex
+    #   google-cloud-dataproc
+    #   google-cloud-dataproc-metastore
+    #   google-cloud-dlp
+    #   google-cloud-kms
+    #   google-cloud-language
+    #   google-cloud-logging
+    #   google-cloud-memcache
+    #   google-cloud-monitoring
+    #   google-cloud-orchestration-airflow
+    #   google-cloud-os-login
+    #   google-cloud-pubsub
+    #   google-cloud-redis
+    #   google-cloud-resource-manager
+    #   google-cloud-run
+    #   google-cloud-secret-manager
+    #   google-cloud-spanner
+    #   google-cloud-speech
+    #   google-cloud-storage
+    #   google-cloud-storage-transfer
+    #   google-cloud-tasks
+    #   google-cloud-texttospeech
+    #   google-cloud-translate
+    #   google-cloud-videointelligence
+    #   google-cloud-vision
+    #   google-cloud-workflows
+    #   pandas-gbq
+    #   sqlalchemy-bigquery
+google-api-python-client==2.102.0
+    # via
+    #   apache-airflow-providers-google
+    #   griphook
+google-auth==2.23.2
+    # via
+    #   apache-airflow-providers-google
+    #   google-api-core
+    #   google-api-python-client
+    #   google-auth-httplib2
+    #   google-auth-oauthlib
+    #   google-cloud-core
+    #   google-cloud-storage
+    #   griphook
+    #   kubernetes
+    #   pandas-gbq
+    #   pydata-google-auth
+    #   sqlalchemy-bigquery
+google-auth-httplib2==0.1.1
+    # via
+    #   apache-airflow-providers-google
+    #   google-api-python-client
+google-auth-oauthlib==1.1.0
+    # via
+    #   google-ads
+    #   pandas-gbq
+    #   pydata-google-auth
+google-cloud-aiplatform==1.34.0
+    # via apache-airflow-providers-google
+google-cloud-appengine-logging==1.3.2
+    # via google-cloud-logging
+google-cloud-audit-log==0.2.5
+    # via google-cloud-logging
+google-cloud-automl==2.11.2
+    # via apache-airflow-providers-google
+google-cloud-batch==0.17.1
+    # via apache-airflow-providers-google
+google-cloud-bigquery==3.12.0
+    # via
+    #   google-cloud-aiplatform
+    #   pandas-gbq
+    #   sqlalchemy-bigquery
+google-cloud-bigquery-datatransfer==3.12.1
+    # via apache-airflow-providers-google
+google-cloud-bigquery-storage==2.22.0
+    # via pandas-gbq
+google-cloud-bigtable==2.21.0
+    # via apache-airflow-providers-google
+google-cloud-build==3.20.0
+    # via apache-airflow-providers-google
+google-cloud-compute==1.14.1
+    # via apache-airflow-providers-google
+google-cloud-container==2.32.0
+    # via apache-airflow-providers-google
+google-cloud-core==2.3.3
+    # via
+    #   google-cloud-bigquery
+    #   google-cloud-bigtable
+    #   google-cloud-logging
+    #   google-cloud-spanner
+    #   google-cloud-storage
+    #   google-cloud-translate
+google-cloud-datacatalog==3.16.0
+    # via apache-airflow-providers-google
+google-cloud-dataflow-client==0.8.4
+    # via apache-airflow-providers-google
+google-cloud-dataform==0.5.3
+    # via apache-airflow-providers-google
+google-cloud-dataplex==1.6.3
+    # via apache-airflow-providers-google
+google-cloud-dataproc==5.6.0
+    # via apache-airflow-providers-google
+google-cloud-dataproc-metastore==1.13.0
+    # via apache-airflow-providers-google
+google-cloud-dlp==3.12.3
+    # via apache-airflow-providers-google
+google-cloud-kms==2.19.1
+    # via apache-airflow-providers-google
+google-cloud-language==2.11.1
+    # via apache-airflow-providers-google
+google-cloud-logging==3.7.0
+    # via apache-airflow-providers-google
+google-cloud-memcache==1.7.3
+    # via apache-airflow-providers-google
+google-cloud-monitoring==2.15.1
+    # via apache-airflow-providers-google
+google-cloud-orchestration-airflow==1.9.2
+    # via apache-airflow-providers-google
+google-cloud-os-login==2.10.0
+    # via apache-airflow-providers-google
+google-cloud-pubsub==2.18.4
+    # via apache-airflow-providers-google
+google-cloud-redis==2.13.2
+    # via apache-airflow-providers-google
+google-cloud-resource-manager==1.10.4
+    # via google-cloud-aiplatform
+google-cloud-run==0.9.1
+    # via apache-airflow-providers-google
+google-cloud-secret-manager==2.16.4
+    # via
+    #   apache-airflow-providers-google
+    #   griphook
+google-cloud-spanner==3.40.1
+    # via
+    #   apache-airflow-providers-google
+    #   sqlalchemy-spanner
+google-cloud-speech==2.21.0
+    # via apache-airflow-providers-google
+google-cloud-storage==2.11.0
+    # via
+    #   apache-airflow-providers-google
+    #   google-cloud-aiplatform
+google-cloud-storage-transfer==1.9.2
+    # via apache-airflow-providers-google
+google-cloud-tasks==2.14.2
+    # via apache-airflow-providers-google
+google-cloud-texttospeech==2.14.2
+    # via apache-airflow-providers-google
+google-cloud-translate==3.12.0
+    # via apache-airflow-providers-google
+google-cloud-videointelligence==2.11.4
+    # via apache-airflow-providers-google
+google-cloud-vision==3.4.4
+    # via apache-airflow-providers-google
+google-cloud-workflows==1.12.1
+    # via apache-airflow-providers-google
+google-crc32c==1.5.0
+    # via google-resumable-media
+google-re2==1.1
+    # via
+    #   apache-airflow
+    #   apache-airflow-providers-cncf-kubernetes
+google-resumable-media==2.6.0
+    # via
+    #   google-cloud-bigquery
+    #   google-cloud-storage
+googleapis-common-protos[grpc]==1.60.0
+    # via
+    #   google-ads
+    #   google-api-core
+    #   google-cloud-audit-log
+    #   grpc-google-iam-v1
+    #   grpcio-status
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+graphviz==0.20.1
+    # via apache-airflow
+greenlet==3.0.1
+    # via sqlalchemy
+griphook==3.4.3
+    # via roadie
+grpc-google-iam-v1==0.12.6
+    # via
+    #   google-cloud-bigtable
+    #   google-cloud-build
+    #   google-cloud-datacatalog
+    #   google-cloud-dataform
+    #   google-cloud-dataplex
+    #   google-cloud-dataproc
+    #   google-cloud-dataproc-metastore
+    #   google-cloud-kms
+    #   google-cloud-logging
+    #   google-cloud-pubsub
+    #   google-cloud-resource-manager
+    #   google-cloud-run
+    #   google-cloud-secret-manager
+    #   google-cloud-spanner
+    #   google-cloud-tasks
+grpcio==1.59.0
+    # via
+    #   google-ads
+    #   google-api-core
+    #   google-cloud-bigquery
+    #   google-cloud-pubsub
+    #   googleapis-common-protos
+    #   grpc-google-iam-v1
+    #   grpcio-gcp
+    #   grpcio-status
+    #   opentelemetry-exporter-otlp-proto-grpc
+grpcio-gcp==0.2.2
+    # via apache-airflow-providers-google
+grpcio-status==1.59.0
+    # via
+    #   google-ads
+    #   google-api-core
+    #   google-cloud-pubsub
+gunicorn==21.2.0
+    # via apache-airflow
+h11==0.14.0
+    # via httpcore
+httpcore==0.18.0
+    # via httpx
+httplib2==0.22.0
+    # via
+    #   google-api-python-client
+    #   google-auth-httplib2
+    #   griphook
+httpx==0.25.0
+    # via
+    #   apache-airflow
+    #   apache-airflow-providers-google
+hvac==0.10.14
+    # via griphook
+identify==2.5.30
+    # via pre-commit
+idna==3.4
+    # via
+    #   anyio
+    #   email-validator
+    #   httpx
+    #   requests
+    #   yarl
+importlib-metadata==6.8.0
+    # via
+    #   opentelemetry-api
+    #   textual
+importlib-resources==6.1.0
+    # via limits
+inflection==0.5.1
+    # via connexion
+iniconfig==2.0.0
+    # via pytest
+isort==5.12.0
+    # via roadie
+itsdangerous==2.1.2
+    # via
+    #   apache-airflow
+    #   connexion
+    #   flask
+    #   flask-wtf
+    #   gke-taskflow (pyproject.toml)
+jinja2==3.1.2
+    # via
+    #   apache-airflow
+    #   flask
+    #   flask-babel
+    #   python-nvd3
+json-merge-patch==0.2
+    # via apache-airflow-providers-google
+jsonschema==4.19.1
+    # via
+    #   apache-airflow
+    #   connexion
+    #   flask-appbuilder
+jsonschema-specifications==2023.7.1
+    # via jsonschema
+kubernetes==23.6.0
+    # via apache-airflow-providers-cncf-kubernetes
+kubernetes-asyncio==24.2.3
+    # via apache-airflow-providers-cncf-kubernetes
+lazy-object-proxy==1.9.0
+    # via apache-airflow
+limits==3.6.0
+    # via flask-limiter
+linkify-it-py==2.0.2
+    # via
+    #   apache-airflow
+    #   markdown-it-py
+lockfile==0.12.2
+    # via
+    #   apache-airflow
+    #   python-daemon
+looker-sdk==23.16.0
+    # via apache-airflow-providers-google
+mako==1.2.4
+    # via alembic
+mando==0.7.1
+    # via radon
+markdown==3.4.4
+    # via apache-airflow
+markdown-it-py[linkify,plugins]==3.0.0
+    # via
+    #   apache-airflow
+    #   mdit-py-plugins
+    #   rich
+    #   textual
+markupsafe==2.1.3
+    # via
+    #   apache-airflow
+    #   jinja2
+    #   mako
+    #   werkzeug
+    #   wtforms
+marshmallow==3.20.1
+    # via
+    #   flask-appbuilder
+    #   marshmallow-oneofschema
+    #   marshmallow-sqlalchemy
+marshmallow-oneofschema==3.0.1
+    # via apache-airflow
+marshmallow-sqlalchemy==0.26.1
+    # via flask-appbuilder
+mdit-py-plugins==0.4.0
+    # via
+    #   apache-airflow
+    #   markdown-it-py
+mdurl==0.1.2
+    # via markdown-it-py
+multidict==6.0.4
+    # via
+    #   aiohttp
+    #   yarl
+mypy==1.5.1
+    # via gke-taskflow (pyproject.toml)
+mypy-extensions==1.0.0
+    # via
+    #   black
+    #   mypy
+nodeenv==1.8.0
+    # via pre-commit
+numpy==1.26.0
+    # via
+    #   db-dtypes
+    #   pandas
+    #   pandas-gbq
+    #   pyarrow
+oauthlib==3.2.2
+    # via requests-oauthlib
+opentelemetry-api==1.20.0
+    # via
+    #   apache-airflow
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+    #   opentelemetry-sdk
+opentelemetry-exporter-otlp==1.20.0
+    # via apache-airflow
+opentelemetry-exporter-otlp-proto-common==1.20.0
+    # via
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+opentelemetry-exporter-otlp-proto-grpc==1.20.0
+    # via opentelemetry-exporter-otlp
+opentelemetry-exporter-otlp-proto-http==1.20.0
+    # via opentelemetry-exporter-otlp
+opentelemetry-proto==1.20.0
+    # via
+    #   opentelemetry-exporter-otlp-proto-common
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+opentelemetry-sdk==1.20.0
+    # via
+    #   opentelemetry-exporter-otlp-proto-grpc
+    #   opentelemetry-exporter-otlp-proto-http
+opentelemetry-semantic-conventions==0.41b0
+    # via opentelemetry-sdk
+ordered-set==4.1.0
+    # via flask-limiter
+packaging==23.2
+    # via
+    #   apache-airflow
+    #   apispec
+    #   black
+    #   build
+    #   connexion
+    #   db-dtypes
+    #   gke-taskflow (pyproject.toml)
+    #   google-cloud-aiplatform
+    #   google-cloud-bigquery
+    #   gunicorn
+    #   limits
+    #   marshmallow
+    #   pyproject-api
+    #   pytest
+    #   roadie
+    #   sqlalchemy-bigquery
+    #   tox
+    #   validate-pyproject
+pandas==2.1.1
+    # via
+    #   apache-airflow-providers-google
+    #   db-dtypes
+    #   pandas-gbq
+pandas-gbq==0.19.2
+    # via apache-airflow-providers-google
+pathspec==0.11.2
+    # via
+    #   apache-airflow
+    #   black
+pbr==5.11.1
+    # via stevedore
+pendulum==2.1.2
+    # via apache-airflow
+pip-tools==7.3.0
+    # via roadie
+platformdirs==3.11.0
+    # via
+    #   black
+    #   tox
+    #   virtualenv
+pluggy==1.3.0
+    # via
+    #   apache-airflow
+    #   pytest
+    #   tox
+pre-commit==3.4.0
+    # via gke-taskflow (pyproject.toml)
+prison==0.2.1
+    # via flask-appbuilder
+proto-plus==1.22.3
+    # via
+    #   apache-airflow-providers-google
+    #   google-ads
+    #   google-cloud-aiplatform
+    #   google-cloud-appengine-logging
+    #   google-cloud-automl
+    #   google-cloud-batch
+    #   google-cloud-bigquery
+    #   google-cloud-bigquery-datatransfer
+    #   google-cloud-bigquery-storage
+    #   google-cloud-bigtable
+    #   google-cloud-build
+    #   google-cloud-compute
+    #   google-cloud-container
+    #   google-cloud-datacatalog
+    #   google-cloud-dataflow-client
+    #   google-cloud-dataform
+    #   google-cloud-dataplex
+    #   google-cloud-dataproc
+    #   google-cloud-dataproc-metastore
+    #   google-cloud-dlp
+    #   google-cloud-kms
+    #   google-cloud-language
+    #   google-cloud-logging
+    #   google-cloud-memcache
+    #   google-cloud-monitoring
+    #   google-cloud-orchestration-airflow
+    #   google-cloud-os-login
+    #   google-cloud-pubsub
+    #   google-cloud-redis
+    #   google-cloud-resource-manager
+    #   google-cloud-run
+    #   google-cloud-secret-manager
+    #   google-cloud-spanner
+    #   google-cloud-speech
+    #   google-cloud-storage-transfer
+    #   google-cloud-tasks
+    #   google-cloud-texttospeech
+    #   google-cloud-translate
+    #   google-cloud-videointelligence
+    #   google-cloud-vision
+    #   google-cloud-workflows
+protobuf==4.24.4
+    # via
+    #   google-ads
+    #   google-api-core
+    #   google-cloud-aiplatform
+    #   google-cloud-appengine-logging
+    #   google-cloud-audit-log
+    #   google-cloud-automl
+    #   google-cloud-batch
+    #   google-cloud-bigquery
+    #   google-cloud-bigquery-datatransfer
+    #   google-cloud-bigquery-storage
+    #   google-cloud-bigtable
+    #   google-cloud-build
+    #   google-cloud-compute
+    #   google-cloud-container
+    #   google-cloud-datacatalog
+    #   google-cloud-dataflow-client
+    #   google-cloud-dataform
+    #   google-cloud-dataplex
+    #   google-cloud-dataproc
+    #   google-cloud-dataproc-metastore
+    #   google-cloud-dlp
+    #   google-cloud-kms
+    #   google-cloud-language
+    #   google-cloud-logging
+    #   google-cloud-memcache
+    #   google-cloud-monitoring
+    #   google-cloud-orchestration-airflow
+    #   google-cloud-os-login
+    #   google-cloud-pubsub
+    #   google-cloud-redis
+    #   google-cloud-resource-manager
+    #   google-cloud-run
+    #   google-cloud-secret-manager
+    #   google-cloud-spanner
+    #   google-cloud-speech
+    #   google-cloud-storage-transfer
+    #   google-cloud-tasks
+    #   google-cloud-texttospeech
+    #   google-cloud-translate
+    #   google-cloud-videointelligence
+    #   google-cloud-vision
+    #   google-cloud-workflows
+    #   googleapis-common-protos
+    #   grpc-google-iam-v1
+    #   grpcio-status
+    #   opentelemetry-proto
+    #   proto-plus
+psutil==5.9.5
+    # via apache-airflow
+pyarrow==13.0.0
+    # via
+    #   db-dtypes
+    #   pandas-gbq
+pyasn1==0.5.0
+    # via
+    #   pyasn1-modules
+    #   rsa
+pyasn1-modules==0.3.0
+    # via
+    #   gcloud-aio-storage
+    #   google-auth
+pycodestyle==2.11.0
+    # via autopep8
+pycparser==2.21
+    # via cffi
+pydantic==2.4.2
+    # via apache-airflow
+pydantic-core==2.10.1
+    # via pydantic
+pydata-google-auth==1.8.2
+    # via pandas-gbq
+pyflakes==3.1.0
+    # via autoflake
+pygments==2.16.1
+    # via
+    #   apache-airflow
+    #   rich
+pyjwt==2.8.0
+    # via
+    #   apache-airflow
+    #   flask-appbuilder
+    #   flask-jwt-extended
+    #   gcloud-aio-auth
+    #   griphook
+pyopenssl==23.2.0
+    # via apache-airflow-providers-google
+pyparsing==3.1.1
+    # via httplib2
+pyproject-api==1.6.1
+    # via tox
+pyproject-hooks==1.0.0
+    # via build
+pytest==7.4.2
+    # via
+    #   gke-taskflow (pyproject.toml)
+    #   pytest-cov
+pytest-cov==4.1.0
+    # via gke-taskflow (pyproject.toml)
+python-daemon==3.0.1
+    # via apache-airflow
+python-dateutil==2.8.2
+    # via
+    #   apache-airflow
+    #   croniter
+    #   flask-appbuilder
+    #   google-cloud-bigquery
+    #   kubernetes
+    #   kubernetes-asyncio
+    #   pandas
+    #   pendulum
+    #   time-machine
+python-nvd3==0.15.0
+    # via apache-airflow
+python-slugify==8.0.1
+    # via
+    #   apache-airflow
+    #   python-nvd3
+pytz==2023.3.post1
+    # via
+    #   flask-babel
+    #   pandas
+pytzdata==2020.1
+    # via pendulum
+pyupgrade==3.14.0
+    # via gke-taskflow (pyproject.toml)
+pyyaml==6.0.1
+    # via
+    #   apispec
+    #   bandit
+    #   clickclick
+    #   connexion
+    #   docstr-coverage
+    #   google-ads
+    #   kubernetes
+    #   kubernetes-asyncio
+    #   pre-commit
+radon==6.0.1
+    # via gke-taskflow (pyproject.toml)
+referencing==0.30.2
+    # via
+    #   jsonschema
+    #   jsonschema-specifications
+requests==2.31.0
+    # via
+    #   apache-airflow-providers-http
+    #   connexion
+    #   google-api-core
+    #   google-cloud-bigquery
+    #   google-cloud-storage
+    #   griphook
+    #   hvac
+    #   kubernetes
+    #   looker-sdk
+    #   opentelemetry-exporter-otlp-proto-http
+    #   requests-oauthlib
+    #   requests-toolbelt
+    #   roadie
+requests-oauthlib==1.3.1
+    # via
+    #   google-auth-oauthlib
+    #   kubernetes
+requests-toolbelt==1.0.0
+    # via apache-airflow-providers-http
+rfc3339-validator==0.1.4
+    # via apache-airflow
+rich==13.6.0
+    # via
+    #   apache-airflow
+    #   bandit
+    #   flask-limiter
+    #   griphook
+    #   rich-argparse
+    #   textual
+rich-argparse==1.3.0
+    # via apache-airflow
+roadie==7.0.7
+    # via gke-taskflow (pyproject.toml)
+rpds-py==0.10.3
+    # via
+    #   jsonschema
+    #   referencing
+rsa==4.9
+    # via
+    #   gcloud-aio-storage
+    #   google-auth
+ruamel-yaml==0.17.35
+    # via roadie
+ruamel-yaml-clib==0.2.8
+    # via ruamel-yaml
+ruff==0.0.292
+    # via gke-taskflow (pyproject.toml)
+semver==3.0.1
+    # via griphook
+setproctitle==1.3.3
+    # via apache-airflow
+shapely==1.8.5.post1
+    # via google-cloud-aiplatform
+six==1.16.0
+    # via
+    #   hvac
+    #   kubernetes
+    #   kubernetes-asyncio
+    #   mando
+    #   prison
+    #   python-dateutil
+    #   rfc3339-validator
+smmap==5.0.1
+    # via gitdb
+sniffio==1.3.0
+    # via
+    #   anyio
+    #   httpcore
+    #   httpx
+sqlalchemy==1.4.49
+    # via
+    #   alembic
+    #   apache-airflow
+    #   flask-appbuilder
+    #   flask-sqlalchemy
+    #   marshmallow-sqlalchemy
+    #   sqlalchemy-bigquery
+    #   sqlalchemy-jsonfield
+    #   sqlalchemy-spanner
+    #   sqlalchemy-utils
+sqlalchemy-bigquery==1.8.0
+    # via apache-airflow-providers-google
+sqlalchemy-jsonfield==1.0.1.post0
+    # via apache-airflow
+sqlalchemy-spanner==1.6.2
+    # via apache-airflow-providers-google
+sqlalchemy-utils==0.41.1
+    # via flask-appbuilder
+sqlparse==0.4.4
+    # via
+    #   apache-airflow-providers-common-sql
+    #   google-cloud-spanner
+stevedore==5.1.0
+    # via bandit
+structlog==23.1.0
+    # via griphook
+tabulate==0.9.0
+    # via apache-airflow
+tenacity==8.2.3
+    # via apache-airflow
+termcolor==2.3.0
+    # via
+    #   apache-airflow
+    #   yaspin
+text-unidecode==1.3
+    # via python-slugify
+textual==0.38.1
+    # via trogon
+time-machine==2.13.0
+    # via gke-taskflow (pyproject.toml)
+tokenize-rt==5.2.0
+    # via pyupgrade
+toml==0.10.2
+    # via roadie
+tomli==2.0.1
+    # via
+    #   autoflake
+    #   autopep8
+    #   black
+    #   build
+    #   coverage
+    #   mypy
+    #   pip-tools
+    #   pyproject-api
+    #   pyproject-hooks
+    #   pytest
+    #   tox
+    #   validate-pyproject
+toposort==1.10
+    # via roadie
+tox==4.11.3
+    # via gke-taskflow (pyproject.toml)
+tqdm==4.63.1
+    # via docstr-coverage
+tree-sitter==0.20.2
+    # via
+    #   textual
+    #   tree-sitter-languages
+tree-sitter-languages==1.7.0
+    # via textual
+trogon==0.5.0
+    # via roadie
+trove-classifiers==2023.9.19
+    # via validate-pyproject
+types-click==7.1.8
+    # via gke-taskflow (pyproject.toml)
+types-pkg-resources==0.1.3
+    # via gke-taskflow (pyproject.toml)
+typing-extensions==4.8.0
+    # via
+    #   alembic
+    #   apache-airflow
+    #   asgiref
+    #   black
+    #   cattrs
+    #   flask-limiter
+    #   limits
+    #   looker-sdk
+    #   mypy
+    #   opentelemetry-sdk
+    #   pydantic
+    #   pydantic-core
+    #   textual
+tzdata==2023.3
+    # via pandas
+uc-micro-py==1.0.2
+    # via linkify-it-py
+unicodecsv==0.14.1
+    # via apache-airflow
+uritemplate==4.1.1
+    # via google-api-python-client
+urllib3==2.0.6
+    # via
+    #   kubernetes
+    #   kubernetes-asyncio
+    #   requests
+validate-pyproject[all]==0.14
+    # via gke-taskflow (pyproject.toml)
+virtualenv==20.24.5
+    # via
+    #   pre-commit
+    #   tox
+websocket-client==1.6.3
+    # via kubernetes
+werkzeug==2.2.3
+    # via
+    #   apache-airflow
+    #   connexion
+    #   flask
+    #   flask-jwt-extended
+    #   flask-login
+wheel==0.41.2
+    # via pip-tools
+wrapt==1.15.0
+    # via deprecated
+wtforms==3.0.1
+    # via
+    #   flask-appbuilder
+    #   flask-wtf
+yarl==1.9.2
+    # via aiohttp
+yaspin==3.0.1
+    # via roadie
+zipp==3.17.0
+    # via importlib-metadata
+
+# The following packages are considered to be unsafe in a requirements file:
+# pip
+# setuptools

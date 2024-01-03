@@ -1,0 +1,116 @@
+[project]
+name = "gke-taskflow"
+authors = [
+    {name = "Recursion Pharmaceuticals", email = "devs@recursionpharma.com"},
+]
+version = "1.0.0"
+readme = "README.md"
+classifiers = [
+	"Operating System :: OS Independent",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+]
+keywords=["gke-taskflow"]
+requires-python = ">=3.8"
+dependencies = [
+	"apache-airflow-providers-cncf-kubernetes",
+	"apache-airflow-providers-google",
+]
+
+[project.entry-points."apache_airflow_provider"]
+provider_info = "gke_taskflow.operators.gke_taskflow:get_provider_info"
+
+[project.optional-dependencies]
+dev = [
+	"bandit",
+	"black",
+    "itsdangerous",
+	"mypy",
+	"packaging",
+	"pre-commit",
+	"pytest",
+	"pyupgrade",
+	"radon",
+	"roadie",
+	"ruff",
+    "time-machine",
+	"types-click",
+	"types-pkg_resources",
+	"tox",
+	"validate-pyproject[all]",
+]
+
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.pytest.ini_options]
+addopts = [
+	"--ignore", "setup.py",
+	"--ignore", "run_test.py",
+	"--tb", "native",
+	"--strict-markers",
+	"--durations=20",
+]
+testpaths = ["tests"]
+env = [
+	"PYTHONHASHSEED=0",
+]
+
+[tool.mypy]
+files = "gke_taskflow"
+python_version = "3.10"
+ignore_missing_imports = true
+show_error_codes = true
+# strict = true
+allow_untyped_calls = true
+
+[tool.isort]
+profile = "black"
+py_version = "auto"
+line_length = 120
+
+[tool.bandit]
+exclude = "tests"
+
+[tool.black]
+line-length = 120
+target-version = ["py39", "py310", "py311"]
+
+[tool.ruff]
+select = ["E", "F"]
+ignore = []
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".mypy_cache",
+    ".nox",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "build",
+    "dist",
+    "venv",
+]
+line-length = 120
+target-version = "py310"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py310
+
+[testenv]
+commands =
+    mypy --install-types --non-interactive
+    pytest
+
+passenv = *
+skip_install=false
+
+deps = -rrequirements/dev_3.10.txt
+"""
