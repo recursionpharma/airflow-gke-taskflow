@@ -147,7 +147,7 @@ cron-descriptor==1.4.0
     # via apache-airflow
 croniter==1.4.1
     # via apache-airflow
-cryptography==41.0.4
+cryptography==42.0.0
     # via
     #   apache-airflow
     #   apache-airflow-providers-cncf-kubernetes
