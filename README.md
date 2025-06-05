@@ -1,3 +1,5 @@
+[![scorecard-score](https://github.com/recursionpharma/octo-guard-badges/blob/trunk/badges/repo/airflow-gke-taskflow/maturity_score.svg?raw=true)](https://infosec-docs.prod.rxrx.io/octoguard/scorecards/airflow-gke-taskflow)
+[![scorecard-status](https://github.com/recursionpharma/octo-guard-badges/blob/trunk/badges/repo/airflow-gke-taskflow/scorecard_status.svg?raw=true)](https://infosec-docs.prod.rxrx.io/octoguard/scorecards/airflow-gke-taskflow)
 # gke-taskflow
 
 Adds support for Taskflow to the GKEStartPodOperator in Airflow.  
