@@ -75,7 +75,7 @@ backoff==2.2.1
     #   opentelemetry-exporter-otlp-proto-http
 bandit==1.7.5
     # via gke-taskflow (pyproject.toml)
-black==23.9.1
+black==24.3.0
     # via
     #   gke-taskflow (pyproject.toml)
     #   roadie
