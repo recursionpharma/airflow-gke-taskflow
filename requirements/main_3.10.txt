@@ -674,7 +674,7 @@ protobuf==4.24.4
     #   proto-plus
 psutil==5.9.5
     # via apache-airflow
-pyarrow==13.0.0
+pyarrow==14.0.1
     # via
     #   db-dtypes
     #   pandas-gbq
