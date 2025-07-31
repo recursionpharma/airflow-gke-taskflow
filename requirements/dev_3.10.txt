@@ -235,7 +235,7 @@ gcloud-aio-storage==9.0.0
     # via apache-airflow-providers-google
 gitdb==4.0.10
     # via gitpython
-gitpython==3.1.37
+gitpython==3.1.41
     # via
     #   bandit
     #   roadie
